@@ -1,0 +1,8 @@
+{
+	"files": {
+		".zshrc": {
+			"repo_path": "$HOME/.dotfiles/zsh/.zshrc",
+			"system_path": "$HOME/.zshrc"
+		}
+	}
+}
