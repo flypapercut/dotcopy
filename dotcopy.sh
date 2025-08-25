@@ -13,7 +13,7 @@ while [[ $# -gt 0 ]]; do
     -f)
       if [[ -n "${2:-}" ]]; then
         file_flag="$2"
-				echo $file_flag
+				#echo $file_flag
 				main $mode_flag
       	shift 2
       else
@@ -26,7 +26,9 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [[ $# -eq 0 && -z $file_flag ]] then
-	echo "could not identify flags"
+	echo "could not identify file flag"
+elif [[ $# -eq 0 && -z $mode_flag ]] then
+	echo "could not identify mode flags"
 fi
 }
 
